@@ -1,0 +1,889 @@
+*{
+    /* border: 1px white solid; */
+    margin: 0;
+    padding: 0;
+    font-family: 'Play', Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(11, 12, 12);
+    color: rgb(190, 200, 200);
+}
+
+h1, h2, h3, h4, .linklink{
+    font-family: 'Cormorant SC', serif;
+}
+
+/* heading */
+
+.maintitle{
+    position: fixed;
+    width: 100%;
+    height: 90px;
+    text-align: center;
+    font-size: 75px;
+    background-color: rgba(190, 200, 200, 0.9);
+    border-bottom: 4px solid yellowgreen;
+    color: rgb(7, 61, 7);
+    z-index: 5;
+}
+
+/* body of text */
+
+.contentbox{
+    position: relative;
+    top: 95px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.mainbar{
+    width: 60%;
+    display: inline-flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    margin-left: 20%;
+}
+
+.mainbar *{
+    /* border: 1px solid white; */
+}
+
+.content1{
+    width: 100%;
+    height: 300px;
+    background-color: rgba(190, 200, 200, 0.06);
+    border-radius: 15px;
+    display: flex;
+    z-index: 2;
+    margin-right: 10px;
+}
+
+.content1
+.background{
+    position: absolute;
+    width: 70%;  
+    height: 300px;  
+    display: flex;
+    justify-content: center;
+    background-image: url(./images/Picture\ clean.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.2;
+}
+
+
+
+.inbox{
+    width: 95%;
+    border-bottom: 2px solid rgb(190, 200, 200);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center;
+    justify-content: space-around; */
+    margin: 0 auto;
+}
+
+.inbox2{
+    /* height: 100%; */
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly; 
+    margin: 20px 0 40px 0;
+    /* background-color: red; */
+}
+
+.inbox p{
+    text-align: center;
+    margin: auto;
+}
+
+.inbox h3{
+    width: 100%;
+    text-align: left;
+    border-bottom: 2px solid rgb(190, 200, 200);
+    font-size: 34px;
+    padding-top: 30px;
+}
+
+.content2,
+.content3,
+.content4{
+    width: 40%;
+    min-width: 350px;
+    max-width: 50%;
+    height: 200px;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /* border: 1px greenyellow solid; */
+}
+
+/* .comingsoon{
+    position: absolute;
+    display: flex;
+    width: 72%;
+    height: inherit;
+    flex-grow: 1;
+    background-color: greenyellow; */
+
+    /* width: inherit;
+    min-width: inherit;
+    height: 200px;
+    background-color: yellow;
+    background-image: url(./images/Comingsoon.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-right: 100px;
+} */
+
+.boxxy{
+    display: flex;
+    background-color: rgba(190, 200, 200, 0.04);
+    height: 190px;
+    flex-direction: row;
+    margin: 25px 10px 10px 0;
+    border-radius: 10px;
+}
+
+.passportimg,
+.blankimage,
+.djimg,
+.chaletimg,
+.clipboardimg,
+.flimg,
+.planeimg{
+    width: 1px;
+    background-repeat: no-repeat;
+    flex-grow: 0.6;
+    border-radius: 5px;
+    margin: 10px;
+    /* border: 1px white solid; */
+}
+
+.passportimg{
+    background-image: url(./images/Passportclean.png);
+    background-size: contain;
+    background-position: center;
+}
+
+.passporttext{
+    display: flex;
+    flex-direction: column;
+    width: 1px;
+    flex-grow: 1;
+}
+
+.passporttext
+p{
+    color: rgb(190, 200, 200);
+    margin: auto;
+    text-align: center;
+}
+
+.passporttext 
+h3{
+    text-align: right;
+    border-bottom: 2px solid rgb(190, 200, 200);
+    margin: 0 10px 0px 0px;
+}
+
+.content3{
+    flex-direction: row;
+    background-color: black;
+    margin: 10px;
+}
+
+.blankimage{
+    background-image: url(./images/skiiers2.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.djimg{
+    background-image: url(./images/DJ.png);
+    background-size: contain;
+    background-position: bottom;
+}
+
+.chaletimg{
+    background-image: url(./images/lodge.png);
+    background-size: contain;
+    background-position: center;
+}
+
+.clipboardimg{
+    background-image: url(./images/ticklist.png);
+    background-size: contain;
+    background-position: center;
+}
+
+.flimg{
+    background-image: url(./images/Logo\ Blue.png);
+    background-size: contain;
+    background-position: center;
+}
+
+.planeimg{
+    background-image: url(./images/Plane.png);
+    background-size: contain;
+    background-position: center;
+}
+
+.content3text{
+    display: flex;
+    flex-direction: column;
+    width: 1px;
+    flex-grow: 1;
+}
+
+.minititle{
+    width: 100%;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.content4{
+    background-image: url(./images/colour\ background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-color: black;
+}
+
+.content4 .background{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.box4{
+    color: red;
+    width: 90%;
+    border-top: rgb(190, 200, 200) solid 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.box4 h3{
+    width: 90%;
+    text-align: right;
+    font-size: 30px;
+}
+
+.backdrop{
+    background-color: rgba(0, 0, 112, 0.5);
+}
+
+.box4 p{
+    /* background-color: rgba(0, 0, 112, 0.5); */
+    text-align: center;
+}
+
+.musiclink{
+    color: rgb(190, 200, 200);
+    text-align: center;
+    background-color: rgb(7, 61, 7);
+    border-radius: 8px;
+    border: 2px rgb(190, 200, 200) solid;
+    display: block;
+    padding: 6px;
+    margin-right: 8px;
+}
+
+/* sidebar formatting */
+
+.sidebar{
+    width: 20%;
+    max-width: 220px;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+    justify-content: start;
+    height: 100vh;
+    margin-bottom: 90px;
+    /* border: red 3px solid; */
+
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+.keyinfo 
+.text
+h3{
+    color: yellowgreen;
+    text-decoration: underline;
+}
+
+.keyinfo{
+    width: 85%;
+    min-width: 155px;
+    border-top: 2px solid rgb(190, 200, 200);
+    border-bottom: 2px solid rgb(190, 200, 200);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: auto;
+}
+
+.keyinfo h2{
+    text-align: center;
+    width: 85%;
+    border-bottom: 2px solid rgb(190, 200, 200);
+    margin: auto;
+    padding-bottom: 5px;
+}
+
+.keyinfo .text{
+    width: 85%;
+    border-bottom: 2px solid rgb(190, 200, 200);
+    margin: auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    background-color: rgba(190, 200, 200, 0.06);
+}
+
+.gap{
+    padding-top: 3px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.key{
+    display: inline;
+    font-family: 'Courgette', cursive;
+    color: rgb(0, 112, 0);
+    background-color: rgb(190, 200, 200);
+    border-radius: 5px;
+    padding: 3px 8px;
+}
+
+.wrapper{
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+/* PROFILES */
+
+.profiletop{
+    position: fixed;
+    width: 100%;
+    /* height: 90px; */
+    z-index: 5;
+    background-color: rgba(0, 0, 112,0.9);
+    border-bottom: yellowgreen 3px solid;
+}
+
+.linklink{
+    color: rgb(190, 200, 200);
+}
+
+.movedown{
+    position: relative;
+    top: 90px;
+}
+
+.profiletitle{
+    text-align: center;
+    font-size: 40px;
+    color: rgb(190, 200, 200);
+}
+
+.profilelink{
+    text-align: right;
+    padding: 10px;
+}
+
+.profilehead{
+    margin: 0 10px 10px 10px;
+    padding-left: 5px;
+    font-size: 30px;
+    border-bottom: rgb(190, 200, 200) 2px solid;
+    padding-top: 10px;
+}
+
+
+.profiles{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.profile{
+    /* border: 1px gray solid; */
+    background-color: rgba(190, 200, 200, 0.04);
+    border-radius: 10px;
+    display: inline-flex;
+    width: 400px;
+    height: 150px;
+    margin: 5px 0;
+    flex-grow: 0;
+    margin: 5px;
+}
+
+.profilepic{
+    /* height: 200px; */
+    width: 1px;
+    flex-grow: 1.3;
+    background-color: rgb(190, 200, 200);
+}
+
+h3{
+    color: yellowgreen;
+    font-size: 24px;
+}
+
+.name{
+    border-bottom: rgb(190, 200, 200) 1px solid;
+}
+
+.blurb{
+    width: 1px;
+    flex-grow: 2;
+    margin-top: 5px;
+    margin-left: 5px;
+    padding-right: 5px;
+    height: 140px;
+    overflow: hidden;
+}
+
+.text{
+    font-family: 'Courgette', cursive;
+    text-align: center;
+    margin-top: 10px;
+    overflow: hidden;
+    
+}
+
+.filter{
+    width: 100%;
+    height: 126px;
+    background-color: rgba(0, 0, 122, 0.4);
+    border-radius: 5px;
+}
+
+ :hover.filter{
+    background-color: rgba(0, 0, 122, 0);
+}
+
+/* profile pictures */
+
+.profilepicct,
+.profilepicrf,
+.profilepicjd,
+.profilepicdw,
+.profilepiclp,
+.profilepiccp,
+.profilepiccb,
+.profilepiclw,
+.profilepicbk,
+.profilepiceg,
+.profilepicoh,
+.profilepicss,
+.profilepicpp,
+.profilepicrcc,
+.profilepiclh,
+.profilepicaf,
+.profilepicjs,
+.profilepicdm,
+.profilepickk,
+.profilepiccs,
+.profilepicsb,
+.profilepicha,
+.profilepicsk,
+.profilepictj,
+.profilepicea,
+.profilepicec,
+.profilepicsf,
+.profilepicjbs,
+.profilepickm,
+.profilepichm,
+.profilepicow,
+.profilepiceh,
+.profilepicrh,
+.profilepicwb,
+.profilepicmc,
+.profilepicne,
+.profilepicdh,
+.profilepicjw{
+    width: 1px;
+    flex-grow: 1.3;
+    background-size: cover;
+    border-radius: 5px;
+    margin: 10px;
+    border: rgb(190, 200, 200) 2px solid;
+    background-position: center;
+}
+
+.profilepicct{
+    background-image: url(./images/headshots/Claire\ Tillotson.png);
+}
+
+.profilepicrf{
+    background-image: url(./images/headshots/Rob\ Farenden.png);
+}
+
+.profilepicjd{
+    background-image: url(./images/headshots/James\ Dinsdale.png);
+}
+
+.profilepicdw{
+    background-image: url(./images/headshots/Dan\ Williams.png);
+}
+
+.profilepiclp{
+    background-image: url(./images/headshots/Lucian\ Purvis.png);
+}
+
+.profilepiccp{
+    background-image: url(./images/headshots/Charlotte\ Pallett.png);
+}
+
+.profilepiccb{
+    background-image: url(./images/headshots/Charles\ Baynham.png);
+}
+
+.profilepiclw{
+    background-image: url(./images/headshots/Lydia\ Watson.png);
+}
+
+.profilepicbk{
+    background-image: url(./images/headshots/Brendan\ Killough.png);
+}
+
+.profilepicoh{
+    background-image: url(./images/headshots/Ollie\ Hatton.png);
+}
+
+.profilepicss{
+    background-image: url(./images/headshots/Sarah\ Shapcott.png);
+}
+
+.profilepicpp{
+    background-image: url(./images/headshots/Parav\ Pandya.png);
+}
+
+.profilepicrcc{
+    background-image: url(./images/headshots/Rory\ C-C.png);
+}
+
+.profilepiclh{
+    background-image: url(./images/headshots/Luke\ Harley.png);
+}
+
+.profilepicaf{
+    background-image: url(./images/headshots/Ashley\ Finn.png);
+}
+
+.profilepiceg{
+    background-image: url(./images/headshots/Ellen\ Greenless.png);
+}
+
+.profilepicjs{
+    background-image: url(./images/headshots/Jack\ Straker.png);
+}
+
+.profilepicdm{
+    background-image: url(./images/headshots/David\ Merriam.png);
+}
+
+.profilepickk{
+    background-image: url(./images/headshots/KitKat.png);
+}
+
+.profilepiccs{
+    background-image: url(./images/headshots/Stowell.png);
+}
+
+.profilepicsb{
+    background-image: url(./images/headshots/Sven\ Brooks.png);
+}
+
+.profilepicha{
+    background-image: url(./images/headshots/Hanscombe.png);
+}
+
+.profilepicsk{
+    background-image: url(./images/headshots/Sophie\ Klein.png);
+}
+
+.profilepictj{
+    background-image: url(./images/headshots/Tom\ Jobson.png);
+}
+
+.profilepicea{
+    background-image: url(./images/headshots/Emily\ Anne.png);
+}
+
+.profilepicec{
+    background-image: url(./images/headshots/Ellie\ Cranfield.png);
+}
+
+.profilepicsf{
+    background-image: url(./images/headshots/Scott\ Fanner.png);
+}
+
+.profilepicjbs{
+    background-image: url(./images/headshots/James\ B-S.png);
+}
+
+.profilepickm{
+    background-image: url(./images/headshots/Katie\ Murray.png);
+}
+
+.profilepichm{
+    background-image: url(./images/headshots/Hannah\ Montgomery.png);
+}
+
+.profilepicow{
+    background-image: url(./images/headshots/Ollie\ Wilmot.png);
+}
+
+.profilepiceh{
+    background-image: url(./images/headshots/Emma\ Harley.png);
+}
+
+.profilepicrh{
+    background-image: url(./images/headshots/Richard\ Hobson.png);
+}
+
+.profilepicwb{
+    background-image: url(./images/headshots/William\ Bowden.png);
+}
+
+.profilepicmc{
+    background-image: url(./images/headshots/Maggie\ Chao.png);
+}
+
+.profilepicne{
+    background-image: url(./images/headshots/Nick\ E.png);
+}
+
+.profilepicdh{
+    background-image: url(./images/headshots/Elizabeth\ Hutton.png);
+}
+
+.profilepicjw{
+    background-image: url(./images/headshots/Joe\ Wilson.png);
+}
+
+/* CARDS */
+
+.card{
+    width: 700px;
+    max-width: 80%;
+    background-image: url(./images/Navy\ background.png);
+    background-size: 90px;
+    background-repeat: repeat;
+    border: 5px solid rgb(190, 200, 200);
+    border-radius: 15px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    /* height: 900px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cardtitle{
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    margin-top: 3vw;
+    margin-bottom: 1.5vw;
+
+}
+
+.cardname 
+h1{
+    font-size: 32px;
+
+}
+
+.cardicons{
+    display: flex;
+}
+
+.snake,
+.queens{
+    height: 30px;
+    width: 30px;
+    
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.snake{
+    background-image: url(./images/card/Snake.png);
+}
+
+.queens{
+    background-image: url(./images/card/Queens.png);
+}
+
+
+
+.cardpic{
+    width: 70%;
+    height: 56vw;
+    max-height: 490px;
+    display: flex;
+    z-index: 2;
+}
+
+.cardpic *{
+    border: 0px;
+    margin: 0px;
+    border: rgb(190, 200, 200) 15px solid;
+    border-radius: 35px;
+    border-style: ridge;
+
+}
+
+.summarybar{
+    width: 90%;
+    background-color: rgb(190, 200, 200);
+    color: rgb(0, 112, 0);
+    font-size: 12px;
+    text-align: center;
+    border-radius: 4px;
+    margin-top: 5px;
+    padding: 5px 0;
+}
+
+
+.stats{
+    display: flex;
+    width: 75%;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.stat{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 7px 0;
+}
+
+.category{
+    font-size: 22px;
+    /* font-family: 'Cormorant SC', serif;   */
+    border-bottom: 1px solid rgb(190, 200, 200);
+    flex-grow: 1;
+    padding-top: 10px;
+}
+
+.score{
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    background-color: rgb(190, 200, 200);
+    color: rgb(0, 0, 255);
+    font-size: 22px;
+    border-radius: 500px;
+    /* font-family: 'Cormorant SC', serif; */
+    padding-top: 6px;
+}
+
+
+/* MEDIA */
+
+@media(min-width: 1100px){
+    .mainbar{
+        margin-left: 220px;
+    }
+}
+
+@media (max-width: 850px){
+    .mainbar{
+        margin-left: 165px;
+    }
+
+
+}
+
+@media (max-width: 910px){
+    .content2{
+        min-width: 90%;
+    } 
+
+}
+
+@media (max-width: 520px){
+    .mainbar{
+        /* background-color: red; */
+        margin-left: 5px;
+        width: 100%;
+    }
+
+    .contentbox{
+        /* display: block; */
+        flex-direction: column;
+        /* background-color: yellow; */
+        /* height: auto; */
+    }
+
+    .sidebar{
+        position: static;
+        width: 100%;
+        max-width: 100%;
+        top: auto;
+        left: auto;
+        /* background-color: green; */
+        height: auto;
+        /* background-color: blue; */
+        margin: 0 5px 10px 5px;
+    }
+
+    .keyinfo{
+        width: 90%;
+        display: flex;
+        flex-wrap: wrap;
+        /* height: 220px; */
+    }
+
+    .keyinfo h2{
+        /* background-color: red; */
+        width: 90%;
+    }
+
+
+    .keyinfo p,
+    .keyinfo .wrapper{
+        display: inline;
+        /* width: 40%; */
+    }
+
+
+    .background{
+        min-width: 100vw;
+    }
+
+    .keybox{
+        margin-bottom: 8px;
+    }
+
+    .keyinfo 
+    .text
+    h3{
+        margin-bottom: 8px;
+    }
+
+}
