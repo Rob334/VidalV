@@ -117,7 +117,7 @@ h1, h2, h3, h4, .linklink .urlinklink{
 }
 
 #logo1{
-    border: 1px solid red;
+    border: 1px solid yellow;
     position: absolute;
     fill: rgb(190, 190, 200);
     width: 100%;
@@ -1383,6 +1383,11 @@ h1{
         width: 40%; 
     } */
 
+    .content1
+    .background{
+        width: 100%;
+        margin: 0;
+    }
 
     .background{
         min-width: 100vw;
