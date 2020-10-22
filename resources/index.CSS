@@ -117,7 +117,7 @@ h1, h2, h3, h4, .linklink .urlinklink{
 }
 
 #logo1{
-    border: 1px solid yellow;
+    border: 1px solid teal;
     position: absolute;
     fill: rgb(190, 190, 200);
     width: 100%;
@@ -135,6 +135,7 @@ h1, h2, h3, h4, .linklink .urlinklink{
 }
   
 #logo2 {
+    border: 1px solid orange;
     position: absolute;
     height: 97%;
     width: 100%;
@@ -1391,6 +1392,11 @@ h1{
 
     .background{
         min-width: 100vw;
+    }
+
+    #logo1,
+    #logo2{
+       max-width: 90vw;
     }
 
     /* .keybox{
