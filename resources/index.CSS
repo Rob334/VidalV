@@ -181,7 +181,8 @@ h1, h2, h3, h4, .linklink .urlinklink{
 
 @-webkit-keyframes evolution1 {  
     0%, 30%, 77%, 100% { fill: rgba(190 , 200, 200, 0);}
-    40%, 65%, 72% { fill: rgba(0 , 0, 112, 1);  }
+    40%, 65%, 70%  { fill: rgba(0 , 0, 112, 1);  }
+    72% { fill: rgba(0 , 0, 255, 1); }  
     35% { fill: rgba(190 , 200, 200, 1); }
 }
 
@@ -196,7 +197,8 @@ h1, h2, h3, h4, .linklink .urlinklink{
 
 @-webkit-keyframes evolution2 {  
     0%, 37.5%, 47.5%, 77%, 100% { fill: rgba(190 , 200, 200, 0); }
-    47.5%, 65%, 72% { fill: rgba(0 , 0, 112, 1); }    
+    47.5%, 65%, 70%  { fill: rgba(0 , 0, 112, 1); }    
+    72% { fill: rgba(0 , 0, 255, 1); }  
     42.5% { fill: rgba(190 , 200, 200, 1); }
 
 }
@@ -211,7 +213,8 @@ h1, h2, h3, h4, .linklink .urlinklink{
 
 @-webkit-keyframes evolution3 {  
     0%, 45%, 77%, 100% { fill: rgba(190 , 200, 200, 0); }
-    55%, 65%, 72% { fill: rgba(0 , 0, 112, 1); }   
+    55%, 65%, 70%  { fill: rgba(0 , 0, 112, 1); }   
+    72% { fill: rgba(0 , 0, 255, 1); }  
     50% { fill: rgba(190 , 200, 200, 1); }
 }
 
@@ -225,7 +228,8 @@ h1, h2, h3, h4, .linklink .urlinklink{
 
 @-webkit-keyframes evolution4 {  
     0%, 52.5%, 77%, 100% { fill: rgba(190 , 200, 200, 0); }
-    62.5%, 65%, 72% { fill: rgba(0 , 0, 112, 1); }   
+    62.5%, 65%, 70% { fill: rgba(0 , 0, 112, 1); }   
+    72% { fill: rgba(0 , 0, 255, 1); }  
     57.5% { fill: rgba(190 , 200, 200, 1); }
 }
 
@@ -238,7 +242,8 @@ h1, h2, h3, h4, .linklink .urlinklink{
 
 @-webkit-keyframes evolution5 {  
     0%, 60%, 77%, 100% { fill: rgba(190 , 200, 200, 0); }
-    70%, 72% { fill: rgba(0 , 0, 112, 1); }   
+    70% { fill: rgba(0 , 0, 112, 1); }  
+    72% { fill: rgba(0 , 0, 255, 1); }  
     65% { fill: rgba(190 , 200, 200, 1); }
 }
 
@@ -340,7 +345,6 @@ h1, h2, h3, h4, .linklink .urlinklink{
 .bookimg,
 .snowimg{
     width: 1px;
-    background-repeat: no-repeat;
     flex-grow: 0.6;
     border-radius: 5px;
     margin: 10px;
@@ -649,14 +653,75 @@ h3{
     
 }
 
+@-webkit-keyframes sparkle {  
+    40%, 80% { background-color: rgba(0, 0, 122, 0.4); }
+    50% { background-color: rgba(0, 0, 122, 0); }
+}
+
 .filter{
     width: 100%;
     height: 126px;
     background-color: rgba(0, 0, 122, 0.4);
-    border-radius: 5px;
+    border-radius: 5px;  
 }
 
- :hover.filter{
+.profilepicrf .filter{
+    -webkit-animation: sparkle 4.8s infinite; 
+}
+
+.profilepicjd .filter{
+    -webkit-animation: sparkle 3.1s infinite; 
+}
+
+.profilepiclp .filter{
+    -webkit-animation: sparkle 3.9s infinite; 
+}
+
+.profilepiccp .filter{
+    -webkit-animation: sparkle 6.2s infinite; 
+}
+
+.profilepiccb .filter{
+    -webkit-animation: sparkle 4.5s infinite; 
+}
+
+.profilepicct .filter{
+    -webkit-animation: sparkle 4.6s infinite; 
+}
+
+.profilepicbk .filter{
+    -webkit-animation: sparkle 3.4s infinite; 
+}
+
+.profilepiceg .filter{
+    -webkit-animation: sparkle 4.2s infinite; 
+}
+
+.profilepicoh .filter{
+    -webkit-animation: sparkle 5s infinite; 
+}
+
+.profilepicss .filter{
+    -webkit-animation: sparkle 4.3s infinite; 
+}
+
+.profilepicpp .filter{
+    -webkit-animation: sparkle 5.3s infinite; 
+}
+
+.profilepicrcc .filter{
+    -webkit-animation: sparkle 3s infinite; 
+}
+
+.profilepiclh .filter{
+    -webkit-animation: sparkle 3.5s infinite; 
+}
+
+.profilepicaf .filter{
+    -webkit-animation: sparkle 6.5s infinite; 
+}
+
+:hover.filter{
     background-color: rgba(0, 0, 122, 0);
 }
 
@@ -951,7 +1016,8 @@ p{
 .profilepicmc,
 .profilepicne,
 .profilepicdh,
-.profilepicjw{
+.profilepicjw,
+.profilepicrd{
     width: 1px;
     flex-grow: 1.3;
     background-size: cover;
@@ -1111,6 +1177,10 @@ p{
 
 .profilepicjw{
     background-image: url(./images/headshots/Joe\ Wilson.png);
+}
+
+.profilepicrd{
+    background-image: url(./images/headshots/Rachel\ Drapper.png);
 }
 
 /* CARDS */
@@ -1424,6 +1494,10 @@ h1{
 
     #location{
         flex-direction: row-reverse;
+    }
+
+    .evoimg{
+        margin-bottom: 40px;
     }
 
     #evo1{
